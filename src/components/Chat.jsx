@@ -2,6 +2,8 @@ import React from "react";
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
+import St from '../assets/img/st.jpeg';
+import Ga from '../assets/img/ga.jpeg';
 
 const Chat = (props) => {
   const isQuestion = (props.type === 'quetion');
@@ -10,7 +12,12 @@ const Chat = (props) => {
   return (
     <ListItem className="{classes}">
         <ListItemAvatar>
-          <Avatar alt="icon" src="/static/images/avatar/1.jpg" />
+          {isQuestion ? (
+            <Avatar alt="icon" src={St} />
+          ) : (
+            <Avatar alt="icon" src={Ga} />
+          )}
+          
         </ListItemAvatar>
         <div className="p-chat__bubble">
           {props.text}

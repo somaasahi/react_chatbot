@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 const Answer = (props) => {
 
   return(
-    <Button variant="contained">
+    <Button variant="contained" onClick={() => props.select(props.content, props.nextId)}>
       {props.content}
     </Button>
   )
