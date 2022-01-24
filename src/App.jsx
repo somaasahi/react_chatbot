@@ -3,7 +3,6 @@ import React from 'react';
 import defaultDataset from './dataset';
 import './assets/styles/style.css';
 import { AnswersList, Chats} from './components/index';
-import { switchClasses } from '@mui/material';
 
 export default class App extends React.Component {
 
@@ -27,7 +26,7 @@ export default class App extends React.Component {
     })
 
     this.setState({
-      answer: this.state.dataset[nextQuestionId].answwer,
+      answers: this.state.dataset[nextQuestionId].answers,
       chats: chats,
       currentId: nextQuestionId
     })
