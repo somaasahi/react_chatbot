@@ -6,6 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Textinput from "./Textinput";
+// import {WEBHOOK_URL} from '../../webhookConfig'
 
 
 export default class FormDialog extends React.Component {
@@ -23,13 +24,43 @@ export default class FormDialog extends React.Component {
   }
 
 inputName = (event) => {
+  
   this.setState({name: event.target.value})
+  
 }
 inputEmail = (event) => {
   this.setState({email: event.target.value})
 }
 inputDescription = (event) => {
   this.setState({description: event.target.value})
+}
+
+submitForm = () => {
+  const name = this.state.name
+  const email = this.state.email
+  const description = this.state.description
+console.log("tt")
+  const payload = {
+    text: 'react_chatbotよりお問い合わせがありました\n' +
+    'お名前:' + name + '\n' +
+    'メール:' + email + '\n' +
+    '内容:\n' + description
+  }
+
+  const url = 'https://hooks.slack.com/services/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'
+
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(payload)
+  }).then(() => {
+    alert('送信が完了しまいた。')
+    this.setState({
+      name: "",
+      email: "",
+      description: ""
+    })
+    return this.props.handleClose()
+  })
 }
 
 
@@ -60,14 +91,12 @@ inputDescription = (event) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={this.props.handleClose}>キャンセル</Button>
-          <Button onClick={this.props.handleClose} autoFocus>
+          <Button onClick={this.props.handleClose }>キャンセル</Button>
+          <Button onClick={this.submitForm} autoFocus>
             送信
           </Button>
         </DialogActions>
       </Dialog>
-
-
 
     )
   }
