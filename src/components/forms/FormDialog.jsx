@@ -6,7 +6,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Textinput from "./Textinput";
-// import {WEBHOOK_URL} from '../../webhookConfig'
 
 
 export default class FormDialog extends React.Component {
