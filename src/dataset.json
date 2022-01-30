@@ -1,10 +1,10 @@
 {
   "init": {
       "answers": [
-          {"content": "任務を依頼したいんです", "nextId": "job_offer"},
-          {"content": "エンジニアのキャリアについて相談したい", "nextId": "consultant"},
-          {"content": "学習コミュニティについて知りたい", "nextId": "community"},
-          {"content": "お付き合いしたい", "nextId": "dating"}
+          {"content": "実はガイ先生に任務を依頼したいんです。。", "nextId": "job_offer"},
+          {"content": "ガイ先生について知りたいです！", "nextId": "consultant"},
+          {"content": "ガイ先生カッコイイです🥺", "nextId": "community"},
+          {"content": "ガイ先生とお付き合いしたい（赤面）", "nextId": "dating"}
       ],
       "question": "木ノ葉の気高き碧い猛獣に何か用か？"
   },
@@ -15,65 +15,65 @@
           {"content": "干柿鬼鮫を倒してほしい", "nextId": "automation_tool"},
           {"content": "その他", "nextId": "other_jobs"}
       ],
-      "question": "どのようなお仕事でしょうか？"
+      "question": "どんな任務だ？"
   },
   "website": {
       "answers": [
           {"content": "ガイ先生のスラックに連絡を送る", "nextId": "contact"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "八門遁甲の開門ですね。コチラから日程調整と料金の確認ができます。etc)1~３門:5万円、4~6門:13万円、7~:命の危険が伴うため要相談"
+      "question": "ホントにすまないが、眉毛をこれ以上剃りたくないんだ。。。でもちょっと興味あるかも"
   },
   "webapp": {
       "answers": [
-          {"content": "問い合わせる", "nextId": "contact"},
+          {"content": "ガイ先生のスラックに連絡を送る", "nextId": "contact"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
       "question": "八門遁甲の開門ですね。コチラから日程と料金について連絡してください。etc)1~３門:5万円、4~6門:13万円、7~:命の危険が伴うため要相談"
   },
   "automation_tool": {
       "answers": [
-          {"content": "問い合わせる", "nextId": "contact"},
+          {"content": "ガイ先生のスラックに連絡を送る", "nextId": "contact"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "自動化ツール開発についてですね。コチラからお問い合わせできます。"
+      "question": "体術しか扱えない俺に暁を倒せるとは思はないぞ、、それでも良ければ報酬について話そう！"
   },
   "other_jobs": {
       "answers": [
-          {"content": "問い合わせる", "nextId": "contact"},
+          {"content": "ガイ先生のスラックに連絡を送る", "nextId": "contact"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "その他についてですね。コチラからお問い合わせできます。"
+      "question": "その他ってなんだよ！コチラからお問い合わせできます。"
   },
   "consultant": {
       "answers": [
-          {"content": "YouTubeで動画を見る", "nextId": "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
-          {"content": "学習コミュニティについて知りたい", "nextId": "community"},
+          {"content": "ガイ先生の好きなラップを聞いてみたい！", "nextId": "https://www.youtube.com/watch?v=Ka8A5bJxdD8"},
+          {"content": "ガイ先生のカッコ良さを外部メディアで体験したい！", "nextId": "community"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "トラハックは普段からYouTubeでキャリアについて発信しています。また、僕が運営するエンジニア向け学習コミュニティ内でも相談に乗っていますよ。"
+      "question": "俺について知りたいのか！俺は意外とど変態だが、どんなことが知りたいんだ？"
   },
   "community": {
       "answers": [
-          {"content": "どんな活動をしているの？", "nextId": "community_activity"},
-          {"content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/"},
+          {"content": "YOUTUBEで戦闘シーンを見たい！", "nextId": "community_activity"},
+          {"content": "名言を読んで号泣したいです！", "nextId": "https://animemiru.jp/articles/18560/#:~:text=%E7%86%B1%E3%81%8D%E7%86%B1%E8%A1%80%E6%95%99%E5%B8%AB%E3%83%9E%E3%82%A4%E3%83%88%E3%83%BB%E3%82%AC%E3%82%A4%E3%81%AE%E5%90%8D%E8%A8%80%E3%81%9D%E3%81%AE1%20%E3%80%8C%E8%87%AA%E5%88%86,%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%82%92%E3%82%88%E3%81%B3%E3%82%88%E3%81%9B%E3%82%8B%E3%80%82%E3%80%8D"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "2020年3月から学習コミュニティを始めました！🎉Webエンジニアへの転職を目指す人向けに、プログラミングを教えたりキャリアの相談に乗っています。"
+      "question": "全然嬉しくないぞ！（照）ちなみに、アニメでは体術しか見せていないだけで、使えない術はないからな！"
   },
   "community_activity": {
       "answers": [
-          {"content": "さらに詳細を知りたい", "nextId": "https://youtu.be/tIzE7hUDbBM"},
-          {"content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/"},
+          {"content": "俺がうちはマダラをボコボコにした動画だ！", "nextId": "https://www.youtube.com/watch?v=oQBuWjoIX7I"},
+          {"content": "マイトガイMAD動画だ！目に焼きつけたまえ！", "nextId": "https://www.youtube.com/watch?v=5LcbSgpWRoY"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。"
+      "question": "仕方ない！高評価を押さなかった奴は俺の部下であるロックリーがボコボコにしにいくからな！"
   },
   "dating": {
       "answers": [
-          {"content": "DMする", "nextId": "https://twitter.com/torahack_"},
+          {"content": "DMする", "nextId": "https://twitter.com/ryo3426f"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
-      "question": "まずは一緒にランチでもいかがですか？DMしてください😘"
+      "question": "平日は忙しいから、金か土の22時に渋谷でデートしてあげよう！"
   }
 }
