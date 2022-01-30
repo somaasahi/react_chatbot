@@ -71,7 +71,7 @@
   },
   "dating": {
       "answers": [
-          {"content": "DMする", "nextId": "https://twitter.com/ryo3426f"},
+          {"content": "何でそんなに遅い時間なんですか？まあいっか！トゥウィッターからDMします！", "nextId": "https://twitter.com/ryo3426f"},
           {"content": "最初の質問に戻る", "nextId": "init"}
       ],
       "question": "平日は忙しいから、金か土の22時に渋谷でデートしてあげよう！"
