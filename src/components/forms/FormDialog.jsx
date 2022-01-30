@@ -38,7 +38,6 @@ submitForm = () => {
   const name = this.state.name
   const email = this.state.email
   const description = this.state.description
-console.log("tt")
   const payload = {
     text: 'react_chatbotよりお問い合わせがありました\n' +
     'お名前:' + name + '\n' +
@@ -46,7 +45,7 @@ console.log("tt")
     '内容:\n' + description
   }
 
-  const url = 'https://hooks.slack.com/services/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'
+  const url = 'https://hooks.slack.com/services/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'
 
   fetch(url, {
     method: 'POST',
